@@ -52,11 +52,11 @@ public class PurchaserMainActivity extends AppCompatActivity {
         }
         PurchaserMessage = (TextView) findViewById(R.id.PurchaserMessage);
         if(Build.VERSION.SDK_INT >= 21){
-            this.invokeBeam();
+            //this.invokeBeam();
         }
-        if(allGood){
+        /*if(allGood){
 
-            }
+            }*/
         ndefMessage = createNdefMessage();
         nfcAdapter.setNdefPushMessage(ndefMessage,this);
 
@@ -67,7 +67,7 @@ public class PurchaserMainActivity extends AppCompatActivity {
     protected void invokeBeam(){
         nfcAdapter.invokeBeam(this);
     }
-    @TargetApi(Build.VERSION_CODES.M)
+    /*@TargetApi(Build.VERSION_CODES.M)
     protected boolean checkFingerprint(){
         if((int) Build.VERSION.SDK_INT >= 23){
             KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
@@ -77,7 +77,7 @@ public class PurchaserMainActivity extends AppCompatActivity {
             }
         }
         return false;
-    }
+    }*/
 
     private NdefMessage createNdefMessage() {
         String done = "Done";
