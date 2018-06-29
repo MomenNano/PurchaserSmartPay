@@ -1,4 +1,3 @@
-*.iml
 
 # Created by https://www.gitignore.io/api/gradle,windows,androidstudio
 
@@ -22,13 +21,6 @@ out/
 
 # Gradle files
 .gradle
-/local.properties
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-.DS_Store
-/build
-/captures
 .gradle/
 build/
 
